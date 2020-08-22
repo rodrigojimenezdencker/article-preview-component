@@ -152,7 +152,7 @@ body,
 .tooltip-caption {
   display: block;
   text-transform: capitalize;
-  letter-spacing: 3px;
+  letter-spacing: 8px;
   color: hsl(212, 23%, 69%);
 }
 
@@ -272,7 +272,7 @@ body,
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-right: 100px;
+    padding-right: 125px;
     border-radius: 0 0 15px 15px;
     background-color: hsl(217, 19%, 35%);
     visibility: visible;
