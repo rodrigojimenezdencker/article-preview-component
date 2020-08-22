@@ -10,7 +10,9 @@
 
 <body>
   <div class="card">
-    <div class="article-image"></div>
+    <div class="article-image">
+      <img src="assets/img/drawers.jpg" alt="drawers">
+    </div>
     <div class="description-container">
       <h1 class="article-title">Shift the overall look and feel by adding these wonderful
         touches to furniture in your home</h1>
@@ -25,16 +27,25 @@
             <p class="date">28 Jun 2020</p>
           </div>
         </div>
-        <button id="share-button">
+        <button id="share-button" data-hook="shareButton-desktop">
           <div class="tooltip-container hidden">
             <div class="share-tooltip">
-              <span class="tooltip-caption">SHARE</span> <span class="facebook-icon"></span> <span class="twitter-icon"></span> <span
-                class="pinterest-icon"></span>
+              <span class="tooltip-caption">SHARE</span> <span class="facebook-icon"></span> <span
+                class="twitter-icon"></span> <span class="pinterest-icon"></span>
             </div>
           </div>
         </button>
       </div>
     </div>
+    <div class="social-buttons hidden">
+      <span class="tooltip-caption">SHARE</span> <span class="facebook-icon"></span> <span class="twitter-icon"></span>
+      <span class="pinterest-icon"></span>
+    </div>
+    <button id="share-button" data-hook="shareButton-mobile"></button>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/rodrigojimenezdencker">Rodrigo F. Jiménez Dencker</a>.
   </div>
   <script src="/assets/js/script.js"></script>
 </body>

@@ -1,9 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const shareButton = document.getElementById("share-button"),
-    tooltipContainer = document.querySelector(".tooltip-container");
+  const shareButtonDesktop = document.querySelector(
+      "[data-hook='shareButton-desktop']"
+    ),
+    tooltipContainer = document.querySelector(".tooltip-container"),
+    shareButtonMobile = document.querySelector(
+      "[data-hook='shareButton-mobile']"
+    ),
+    socialButtonsMobile = document.querySelector(".social-buttons");
 
-  shareButton.addEventListener("click", () => {
+  shareButtonDesktop.addEventListener("click", () => {
     tooltipContainer.classList.toggle("hidden");
-    shareButton.classList.toggle("active");
+    shareButtonDesktop.classList.toggle("active");
+  });
+
+  shareButtonMobile.addEventListener("click", () => {
+    socialButtonsMobile.classList.toggle("hidden");
+    shareButtonMobile.classList.toggle("active");
   });
 });
