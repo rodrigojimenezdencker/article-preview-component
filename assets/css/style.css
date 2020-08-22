@@ -100,6 +100,7 @@ body,
   background-color: hsl(210, 46%, 95%);
   border-radius: 50%;
   border: none;
+  outline: none;
   cursor: pointer;
   position: relative;
 }
@@ -290,5 +291,7 @@ body,
     position: absolute;
     bottom: 55px;
     right: 40px;
+    outline: none;
+    border: none;
   }
 }
